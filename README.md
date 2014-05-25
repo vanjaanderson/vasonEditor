@@ -26,7 +26,13 @@ Instructions for use
 
 4. Insert `vasonEditor` anywhere in your webpage. The editor will be placed on the exact spot where you put the code.
 	<pre>
-&lt;script type="text/javascript">$('&lt;div id="vasonEditor">&lt;/div>').vasonEditor()&lt;/script>
+&lt;div id="vasonEditor">
+	&lt;script type="text/javascript">
+		$(document).ready( function() {
+			$('#vasonEditor').vasonEditor();
+		});
+	&lt;/script>
+&lt;/div>
 </pre>
 
 
