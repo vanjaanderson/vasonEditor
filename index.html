@@ -12,9 +12,15 @@
 		<script src="script/vasonEditor_functions.js"></script>
 		<script src="script/vasonEditor_main.js"></script>
 	</head>
-	<body>
+	<body>		
 		<h1>Vason Editor version 1.0</h1>
 		<!-- Editor goes here -->
-		<script type="text/javascript">$('<div id="vasonEditor"></div>').vasonEditor()</script>
+		<div id="vasonEditor">
+			<script type="text/javascript">
+				$(document).ready( function() {
+					$('#vasonEditor').vasonEditor();
+				});
+			</script>
+		</div>
 	</body>
 </html>

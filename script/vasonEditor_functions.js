@@ -252,30 +252,26 @@ function toggleSwatches() {
   $('#bgColor').mouseover(function() {
     $('#swatchesTxt').hide();
     $('#swatchesH').hide();
-    //$('#overlay').hide();
     $('#swatchesBg').show();
     $('#swatchesBg').css('left', '424px');
   });
   $('#txtColor').mouseover(function() {
     $('#swatchesBg').hide();
     $('#swatchesH').hide();
-    //$('#overlay').hide();
     $('#swatchesTxt').show();
     $('#swatchesTxt').css('left', '458px');
   });
   $('#hColor').mouseover(function() {
     $('#swatchesBg').hide();
     $('#swatchesH').show();
-    //$('#overlay').hide();
     $('#swatchesTxt').hide();
     $('#swatchesH').css('left', '492px');
   });
   // Hide tables from all buttons
-  $('#bold, #italic, #h2, #h3, #ul, #ol, #left, #center, #right, #justify, #sup, #sub, #quote, #link').mouseover(function() {
+  $('#bold, #italic, #h2, #h3, #ul, #ol, #left, #center, #right, #justify, #sup, #sub, #quote, #link, #image').mouseover(function() {
     $('#swatchesBg').hide();
     $('#swatchesH').hide();
     $('#swatchesTxt').hide();
-    //$('#overlay').hide();
   });
 }
 

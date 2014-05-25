@@ -2,7 +2,7 @@
   $.fn.vasonEditor = function() {
     // Create some DOM
     $('title').html('Vason Editor');
-    $('<form id="main"></form>').appendTo('body');
+    $('<form id="main"></form>').appendTo('#vasonEditor');
     $('<div id="panel"></div>').prependTo('form#main');
     $('<div id="toppanel"></div>').prependTo('form#main');
 
@@ -19,7 +19,7 @@
     $('<input id="save" type="submit" value="Spara" onclick="javascript:saveLS()" />').prependTo('#toppanel');
 
     // Create dialog form for links
-    $('<form id="overlay"></form>').appendTo('body');
+    $('<form id="overlay"></form>').appendTo('#panel');
     $('<label></label>').html('Adress till länk').appendTo('form#overlay');
     $('<input id="url" type="url" value="http://vanjaanderson.com" />').appendTo('form#overlay');
 
@@ -27,7 +27,7 @@
     $('<button id="saveurl" class="save" onclick="saveUrl()">Spara</button>').appendTo('#overlay');
 
     // Create dialog form for images
-    $('<form id="imgoverlay"></form>').appendTo('body');
+    $('<form id="imgoverlay"></form>').appendTo('#panel');
     $('<label></label>').html('Namn på bild (img/pic/...)').appendTo('form#imgoverlay');
     $('<input id="insertimg" type="text" value="catandmice.jpg" />').appendTo('form#imgoverlay');
     $('<label></label>').html('Bildtext').appendTo('form#imgoverlay');
