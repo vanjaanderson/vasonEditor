@@ -3,7 +3,7 @@ window.onload = init;
 
 function init() {
   // Initial text in textarea
-  initial = 'Do lists by highlighting the content of your choice, choose type of list from the panel and write a minus in front of each post.\n\n[ul]list object\n-list object\n-list object[/ul]\n\n[ol]list object\n-list object\n-list object[/ol]\n\n[blockquote]When I went to school, they asked me what I wanted to be when I grew up. I wrote down &rdquo;Happy&rdquo;. They told me I didn&rsquo;t understand the assignment and I told them they didn&rsquo;t understand life.\n&mdash; John Lennon[/blockquote]\n\n[a href="http://vanjaanderson.com"]Check link here[/a], by highlighting and choose link in panel.\n\n[img src="img/pic/catandmice.jpg"][caption=A poor little cat :( /]';
+  initial = 'Do lists by highlighting the content of your choice, choose type of list from the panel and write a minus in front of each post.\n\n[ul]list object\n-list object\n-list object[/ul]\n\n[ol]list object\n-list object\n-list object[/ol]\n\n[blockquote]When I went to school, they asked me what I wanted to be when I grew up. I wrote down &rdquo;Happy&rdquo;. They told me I didn&rsquo;t understand the assignment and I told them they didn&rsquo;t understand life.\n&mdash; John Lennon[/blockquote]\n\n[a href=\"#\"]Check link here[/a], by highlighting and choose link in panel.\n\n[img src=\"img/pic/catandmice.jpg\"][caption=A poor little cat :( /]';
   // Get saved values from LocalStorage (if any)
   getLS();
   // Autosave every 5 minutes
