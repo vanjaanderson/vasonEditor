@@ -65,10 +65,10 @@ Features in vasonEditor
 
 Edit color swatches
 -------------------
-To edit the color swatches, open the `vasonEditor_functions.js` in script directory. Change text marked red, on lines 209&mdash;212. Find colors or color codes to use on [http://www.w3schools.com/html/html_colornames.asp](http://www.w3schools.com/html/html_colornames.asp).
+To edit the color swatches, open the `vasonEditor_functions.js` in script directory. Change colors, on lines 209&mdash;212. Find colors or color codes to use on [http://www.w3schools.com/html/html_colornames.asp](http://www.w3schools.com/html/html_colornames.asp).
 <pre style='margin-left:0px'>
 var swatches = [
-  {"col1":"<span style="color: red">white</span>","col2":"<span style='color: red'>mistyrose</span>","col3":"<span style='color: red'>lightcyan</span>","col4":"<span style='color: red'>honeydew"</span>,"col5":"<span style='color: red'>lightyellow</span>"},
+  {"col1":"<span style='color: red'>white</span>","col2":"<span style='color: red'>mistyrose</span>","col3":"<span style='color: red'>lightcyan</span>","col4":"<span style='color: red'>honeydew"</span>,"col5":"<span style='color: red'>lightyellow</span>"},
   {"col1":"<span style='color: red'>lightgray</span>","col2":"<span style='color: red'>lightpink</span>","col3":"<span style='color: red'>lightskyblue</span>","col4":"<span style='color: red'>palegreen</span>","col5":"<span style='color: red'>yellow</span>"},
   {"col1":"<span style='color: red'>gray</span>","col2":"<span style='color: red'>indianred</span>","col3":"<span style='color: red'>dodgerblue</span>","col4":"<span style='color: red'>limegreen</span>","col5":"<span style='color: red'>gold</span>"},
   {"col1":"<span style='color: red'>black</span>","col2":"<span style='color: red'>maroon</span>","col3":"<span style='color: red'>blue</span>","col4":"<span style='color: red'>green</span>","col5":"<span style='color: red'>darkorange</span>"}
@@ -84,3 +84,4 @@ To-Do
 Change Log
 ----------------
 * v1.0    - First release of vasonEditor | 2014-05-24
+* v1.1	  - Minor changes in instructions (README.md) | 2014-05-29
