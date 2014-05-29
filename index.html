@@ -3,9 +3,10 @@
 	<head>
 		<meta charset='utf-8' />
 		<title></title>
+		<link rel='apple-touch-icon' href='img/apple-touch-icon.png' />
+		<link rel="shortcut icon"  href='img/favicon.png' />
 		<!-- Necessary links -->
 		<link rel='stylesheet' type='text/css' href='style/vasonEditor.css' />
-		<link rel='apple-touch-icon' href='img/apple-touch-icon.png' />
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 		<script src="http://modernizr.com/downloads/modernizr-latest.js"></script>
@@ -13,14 +14,96 @@
 		<script src="script/vasonEditor_main.js"></script>
 	</head>
 	<body>		
-		<h1>Vason Editor version 1.0</h1>
-		<!-- Editor goes here -->
-		<div id="vasonEditor">
-			<script type="text/javascript">
-				$(document).ready( function() {
-					$('#vasonEditor').vasonEditor();
-				});
-			</script>
+		<div id="wrapper">
+			<h1>VasonEditor v1.0 &mdash; a jQuery html editor plugin <a id="download" href="http://github.com/vanjaanderson/vasonEditor" target="_blank">Download it</a></h1>
+			<div id="info">
+				<h3>Requirements</h3>
+				<p>This plugin works with all browsers that can handle HTML5 LocalStorage feature.</p>
+				
+				<h3>Why use this plugin?</h3>
+				<p>You can easily use this plugin in all your websites. It looks and works like an editor created for content management systems as WordPress, Joomla or Drupal, but is 
+					far more easy to use!</p>
+				<p>Just follow the easy steps for installation and use. Also look at the fancy features described in the bottom. Have fun!</p>
+
+				<h3>Instructions for use</h3>
+				<ol>
+					<li>Download and unzip the <a href="http://github.com/vanjaanderson/vasonEditor" target="_blank">vasonEditor</a> package from GitHub.</li>
+					<li>Put files and directories in your website directory.</li>
+					<li>In your index-file, copy all necessary links and paste them inside the head.</li>
+<pre>
+&lt;link rel='stylesheet' type='text/css' href='style/vasonEditor.css' />
+&lt;script src="http://code.jquery.com/jquery-latest.min.js">&lt;/script>
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js">&lt;/script>
+&lt;script src="http://modernizr.com/downloads/modernizr-latest.js">&lt;/script>
+&lt;script src="script/vasonEditor_functions.js">&lt;/script>
+&lt;script src="script/vasonEditor_main.js">&lt;/script>
+</pre>
+
+					<li>Insert <em>vasonEditor</em> anywhere in your webpage. The editor will be placed on the exact spot where you put the code.</li>
+<pre>
+&lt;div id="vasonEditor">
+  &lt;script type="text/javascript">
+    $(document).ready( function() {
+      $('#vasonEditor').vasonEditor();
+    });
+  &lt;/script>
+&lt;/div>
+</pre>
+
+				</ol>
+
+				<h3>Features in VasonEditor</h3>
+				<ul>
+					<li>Code mode, for creating or editing text.</li>
+					<li>View mode, for viewing result, in a WYSIWYG manner.</li>
+					<li style="list-style-image: url(img/buttons/bold16.jpg); margin-top:2px;">	<span style="display:inline-block; position:relative; top:-2px">Make text <strong>bold</strong>.</span></li>
+					<li style="list-style-image: url(img/buttons/italic16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">Make text <em>italic</em>.</span></li>
+					<li style="list-style-image: url(img/buttons/H2_16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Use header 2.</span></li>
+					<li style="list-style-image: url(img/buttons/H3_16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Use header 3.</span></li>
+					<li style="list-style-image: url(img/buttons/ul16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Bullet (unordered) list.</span></li>
+					<li style="list-style-image: url(img/buttons/ol16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Numbered (ordered) list.</span></li>
+					<li style="list-style-image: url(img/buttons/left16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">All content left-justified.</span></li>
+					<li style="list-style-image: url(img/buttons/center16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">All content centered.</span></li>
+					<li style="list-style-image: url(img/buttons/right16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">All content right-justified.</span></li>
+					<li style="list-style-image: url(img/buttons/justify16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">All content margin justified.</span></li>
+					<li style="list-style-image: url(img/buttons/sup16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Superscript (m<sup>2</sup>).</span></li>
+					<li style="list-style-image: url(img/buttons/sub16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Subscript (H<sub>2</sub>O).</span></li>
+					<li style="list-style-image: url(img/buttons/bg16.jpg);">					<span style="display:inline-block; position:relative; top:-2px;">Background color, pick from swatches.</span></li>
+					<li style="list-style-image: url(img/buttons/txt16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Text color, pick from swatches.</span></li>
+					<li style="list-style-image: url(img/buttons/hcolor16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">Headings color, pick from swatches.</span></li>
+					<li style="list-style-image: url(img/buttons/quote16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">Make blockquote.</span></li>
+					<li style="list-style-image: url(img/buttons/link16.jpg);">					<span style="display:inline-block; position:relative; top:-2px">Insert a link.</span></li>
+					<li style="list-style-image: url(img/buttons/image16.jpg);">				<span style="display:inline-block; position:relative; top:-2px">Insert image and image caption.</span></li>
+				</ul>
+
+				<h3>Edit color swatches</h3>
+				<p>To edit the color swatches, open the <em>vasonEditor_functions.js</em> in script directory. Change text marked red, on lines 209&mdash;212. Find colors or color codes to use on <a href='http://www.w3schools.com/html/html_colornames.asp' target='_blank'>http://www.w3schools.com/html/html_colornames.asp</a>.</p>
+<pre style='margin-left:0px'>
+var swatches = [
+  {"col1":"<span class='swatch'>white</span>","col2":"<span class='swatch'>mistyrose</span>","col3":"<span class='swatch'>lightcyan</span>","col4":"<span class='swatch'>honeydew"</span>,"col5":"<span class='swatch'>lightyellow</span>"},
+  {"col1":"<span class='swatch'>lightgray</span>","col2":"<span class='swatch'>lightpink</span>","col3":"<span class='swatch'>lightskyblue</span>","col4":"<span class='swatch'>palegreen</span>","col5":"<span class='swatch'>yellow</span>"},
+  {"col1":"<span class='swatch'>gray</span>","col2":"<span class='swatch'>indianred</span>","col3":"<span class='swatch'>dodgerblue</span>","col4":"<span class='swatch'>limegreen</span>","col5":"<span class='swatch'>gold</span>"},
+  {"col1":"<span class='swatch'>black</span>","col2":"<span class='swatch'>maroon</span>","col3":"<span class='swatch'>blue</span>","col4":"<span class='swatch'>green</span>","col5":"<span class='swatch'>darkorange</span>"}
+];
+</pre>
+			</div>
+			<div id="editor">
+				<h3>Working Demo</h3>
+				<div id="vasonEditor">
+					<script type="text/javascript">
+						$(document).ready( function() {
+							$('#vasonEditor').vasonEditor();
+						});
+					</script>
+				</div>
+				<footer>
+					<h3>About Me</h3>
+					<img src="img/pic/vanja_250.jpg" alt="Vanja Anderson" style="float:right; margin-top:-40px" />
+					<p>I am a swedish woman, 49 years old and fairly geeky!</p>
+					<p>This is the master assignment in a course in Javascript I participate on Blekinge Institute of Technology, Sweden.</p>
+					<p><a href="http://vanjaanderson.com" target="_blank">My homepage</a> (in swedish).</p>
+				</footer
+			</div>
 		</div>
 	</body>
 </html>

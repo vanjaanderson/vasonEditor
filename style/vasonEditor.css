@@ -1,11 +1,104 @@
-#vasonEditor {
-	position: fixed;
-	left: 50%;
-	margin-left: -330px;
+body {
+	background-color: lightsteelblue;
+}
+
+h1, h2, h3, p, li {
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+}
+
+footer p, footer h3 {
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+footer p, footer h3 {
+	color: rgba(255,255,255,0.8);
+}
+
+footer a {
+	color: orange;
+}
+
+footer a:hover {
+	color: red;
+}
+
+#wrapper {
+	width: 1394px;
+	margin: 100px auto;
+	background: rgba(255,255,255,0.2);
+	padding: 20px;
+	overflow:auto;
+	border-radius: 20px;
+
+}
+
+#info {
+	width: 700px;
+	float:left;
+}
+
+a {
+	color: maroon;
+}
+
+a:hover {
+	color:teal;
+}
+
+footer {
+	width: 622px;
+	height: 286px;
+	margin-top: 50px;
+	padding: 2px 16px 2px 16px;
+	background: rgba(0,0,0,0.6);
+	border-radius: 4px;
+	float: right;
+	margin-right: -12px;
+}
+
+#editor {
+	width: 638px;
+	float:right;
+	margin-right: 16px;
+}
+
+#download {
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px 4px rgba(0,0,0,0.6);
+	background: red;
+	color: white;
+	text-decoration: none;
+	font-size: 0.5em;
+	padding: 0.5em;
+}
+
+#download:hover {
+	background: steelblue;
+	color: black;
+}
+
+pre {
+	background-color: rgba(0,0,0,0.07);
+	padding: 16px;
+	width: 680px;
+	font-size: 0.9em;
+	margin-left:-40px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.4) inset;
+}
+
+span.swatch {
+	color: maroon;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Trebuchet MS";
 }
 
 h1 {
 	text-align: center;
+	font-size: 3em;
 }
 
 form#main {
