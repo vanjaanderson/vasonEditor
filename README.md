@@ -2,13 +2,13 @@ VasonEditor - a jQuery html editor plugin
 =============================================================
 This is my examination assignment in course "Javascript" in springterm 2014, on Blekinge Tekniska Högskola (Blekinge Institute of Technology), Sweden.
 
-Requirements
-------------
-This plugin works with all browsers that can handle HTML5 LocalStorage feature.
-
 Working Demo
 ------------
 Take a glance at my charming [VasonEditor](http://vanjaswebb.se/incl/content/bth/javascript/vasonEditor/).
+
+Requirements
+------------
+This plugin works with all browsers that can handle HTML5 LocalStorage feature.
 
 Why use this plugin?
 --------------------
