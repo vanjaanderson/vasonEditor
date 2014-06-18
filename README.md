@@ -6,6 +6,10 @@ Requirements
 ------------
 This plugin works with all browsers that can handle HTML5 LocalStorage feature.
 
+Working Demo
+------------
+Take a glance at my charming [VasonEditor](http://vanjaswebb.se/incl/content/bth/javascript/vasonEditor/).
+
 Why use this plugin?
 --------------------
 You can easily use this plugin in all your websites. It looks and works like an editor created for content management systems as WordPress, Joomla or Drupal, but is far more easy to use!
