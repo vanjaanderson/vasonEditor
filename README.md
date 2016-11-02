@@ -4,7 +4,7 @@ This is my examination assignment in course "Javascript" in springterm 2014, on 
 
 Working Demo
 ------------
-Take a glance at my charming [VasonEditor](http://vanjaswebb.se/incl/content/bth/javascript/vasonEditor/).
+Take a glance at my charming [VasonEditor](http://vanjaswebb.se/en/vasoneditor).
 
 Requirements
 ------------
